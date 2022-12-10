@@ -33,11 +33,18 @@ footer{
   clear: both;
 }
 
+.menu{
+  text-align: center;
+  width: 50%;
+  display: inline-block;
+  margin: 25px auto;
+}
+
+
 section button{
-  width: 350px;
   padding:7px;
   margin: 10px auto;
-  display: block;
+
   text-align: center;
   font-size: 15px;
   border-radius: 10px;
