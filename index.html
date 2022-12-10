@@ -1,41 +1,41 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+  <title>Pokemon</title>
+  <meta name="description" content="Un juego para adivinar el pokemon">
+  <meta name="author" content="Kenlly-Chacon">
+  <meta name="keywords" content="juego, pokemon, kedeo-ordinary, drilbur,ninjask,excadrill">
+  <meta name="google-site-verification" content="">
+  <meta name="googlebot" content="">
+  <link rel="stylesheet" href="/css/pokemon.css">
+  <script src="/js/pokemon.js"></script>
 </head>
 
 <body>
+<header>
+  <h1 id="id_texto_inicial">Seleccione el Pokémon correcto</h1>
+</header>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<nav></nav>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<section>
+  <img id="id_imagen_inicial" src="/img/pnegro.jpg" alt="Imagen de excadrill">
+  <button id="id_keldeo" onclick="accion('keldeo-ordinary')">keldeo-ordinary</button>
+  <button id="id_drilbur" onclick="accion('drilbur')">drilbur</button>
+  <button id="id_ninjask" onclick="accion('ninjask')">ninjask</button>
+  <button id="id_excadrill" onclick="accion('excadrill')">excadrill</button>
+  <label id="id_mensaje" for=""></label>
+  <button id="id_reiniciar" onclick="reiniciar()">Reiniciar</button>
+</section>
+
+<footer>
+  Derechos Reservados 2022-2023
+</footer>
+
 </body>
-
 </html>
